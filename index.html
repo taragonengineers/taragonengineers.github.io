@@ -1,244 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taragon Engineers | Motor Starters</title>
-   <style>
-    :root {
-      --red: #c40000;
-      --dark: #333;
-      --blue: #3A2B99;
-      --white: #fff;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fafafa;
-      color: #222;
-    }
-
-    /* ===== HEADER ===== */
-    header {
-      background-color: var(--red);
-      color: var(--white);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 30px;
-      flex-wrap: wrap;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-
-    /* ===== LEFT SECTION ===== */
-    .company-info {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      flex: 1;
-      min-width: 280px;
-    }
-
-    .company-info img {
-      height: 50px;
-      width: auto;
-    }
-
-    .company-text h1 {
-      margin: 0;
-      font-size: 1.4rem;
-      font-weight: 600;
-    }
-
-    .company-text p {
-      margin: 2px 0 0;
-      font-size: 0.9rem;
-      opacity: 0.9;
-    }
-
-    /* ===== RIGHT SECTION ===== */
-    .contact-buttons {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .contact-buttons a {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 8px 16px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: bold;
-      color: var(--white);
-      transition: all 0.3s ease;
-      white-space: nowrap;
-    }
-
-    .call-btn {
-      background-color: var(--dark);
-    }
-
-    .call-btn:hover {
-      background-color: #000;
-    }
-
-    .email-btn {
-      background-color: var(--blue);
-    }
-
-    .email-btn:hover {
-      background-color: #1a4360;
-    }
-
-    /* ===== MAIN CONTENT ===== */
-    main {
-      padding: 30px 20px;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-
-    main h2 {
-      color: var(--red);
-    }
-
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 900px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 20px;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taragon Engineers | Motor Starters</title>
+    <style>
+      :root {
+        --red: #c40000;
+        --dark: #333;
+        --blue: #3a2b99;
+        --white: #fff;
       }
 
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #fafafa;
+        color: #222;
+      }
+
+      /* ===== HEADER ===== */
+      header {
+        background-color: var(--red);
+        color: var(--white);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 30px;
+        flex-wrap: wrap;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      /* ===== LEFT SECTION ===== */
       .company-info {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex: 1;
+        min-width: 280px;
+      }
+
+      .company-info img {
+        height: 50px;
+        width: auto;
       }
 
       .company-text h1 {
-        font-size: 1.2rem;
+        margin: 0;
+        font-size: 1.4rem;
+        font-weight: 600;
       }
 
       .company-text p {
-        font-size: 0.85rem;
+        margin: 2px 0 0;
+        font-size: 0.9rem;
+        opacity: 0.9;
       }
 
+      /* ===== RIGHT SECTION ===== */
       .contact-buttons {
-        width: 100%;
-        justify-content: flex-start;
-        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
       }
 
       .contact-buttons a {
-        font-size: 0.85rem;
-        padding: 8px 12px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 16px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: var(--white);
+        transition: all 0.3s ease;
+        white-space: nowrap;
       }
-    }
 
-    @media (max-width: 500px) {
-      .company-info img {
-        height: 40px;
+      .call-btn {
+        background-color: var(--dark);
       }
-      .company-text h1 {
-        font-size: 1rem;
+
+      .call-btn:hover {
+        background-color: #000;
       }
+
+      .email-btn {
+        background-color: var(--blue);
+      }
+
+      .email-btn:hover {
+        background-color: #1a4360;
+      }
+
+      /* ===== MAIN CONTENT ===== */
       main {
-        padding: 20px 10px;
+        padding: 30px 20px;
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
       }
-    }
 
-    /* ===== FOOTER ===== */
-    footer {
-      background-color: var(--blue);
-      color: var(--white);
-      /* padding: 20px; */
-      display: flex;
-      justify-content: space-between;
-      align-items: stretch;
-      flex-wrap: wrap;
-      font-size: 0.9rem;
-    }
+      main h2 {
+        color: var(--red);
+      }
 
-   
-    .footer-center {
-      background-color: var(--yellow);
-      color: #000;
-      padding: 10px;
-      border-radius: 6px;
-      text-align: center;
-      font-weight: bold;
-      flex: 0.7;
-      min-width: 180px;
-      margin: 10px;
-    }
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 900px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 15px 20px;
+        }
 
-     .footer-center {
-      flex: 1;
-      min-width: 220px;
-    }
+        .company-info {
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
+        }
 
-    .footer-center h3 {
-      margin: 0;
-      font-size: 1.2rem;
-    }
+        .company-text h1 {
+          font-size: 1.2rem;
+        }
 
-    .footer-center p {
-      margin: 4px 0;
-      line-height: 1.4;
-    }
+        .company-text p {
+          font-size: 0.85rem;
+        }
 
-  </style>
-</head>
-<body>
+        .contact-buttons {
+          width: 100%;
+          justify-content: flex-start;
+          margin-top: 10px;
+        }
 
-  <header>
-    <div class="company-info">
-      <img src="images/logo.png" alt="Logo">
-      <div class="company-text">
-        <h1 style="margin-bottom: 10px;color: yellow;">Taragon Engineers</h1>
-        <p>Bangalore, Karnataka | GST: 29AACPO0336P1ZD | Verified</p>
+        .contact-buttons a {
+          font-size: 0.85rem;
+          padding: 8px 12px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .company-info img {
+          height: 40px;
+        }
+        .company-text h1 {
+          font-size: 1rem;
+        }
+        main {
+          padding: 20px 10px;
+        }
+      }
+
+      /* ===== FOOTER ===== */
+      footer {
+        background-color: var(--blue);
+        color: var(--white);
+        /* padding: 20px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+      }
+
+      .footer-center {
+        background-color: var(--yellow);
+        color: #000;
+        padding: 10px;
+        border-radius: 6px;
+        text-align: center;
+        font-weight: bold;
+        flex: 0.7;
+        min-width: 180px;
+        margin: 10px;
+      }
+
+      .footer-center {
+        flex: 1;
+        min-width: 220px;
+      }
+
+      .footer-center h3 {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+
+      .footer-center p {
+        margin: 4px 0;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="company-info">
+        <img src="images/logo.png" alt="Logo" />
+        <div class="company-text">
+          <h1 style="margin-bottom: 10px; color: yellow">Taragon Engineers</h1>
+          <p>Bangalore, Karnataka | GST: 29AACPO0336P1ZD | Verified</p>
+        </div>
       </div>
-    </div>
 
-    <div class="contact-buttons">
-      <a href="tel:+919343409909" class="call-btn">📞 Call +91-9343409909</a>
-      <a href="mailto:taragonengineers@gmail.com" class="email-btn">✉️ Send Email</a>
-    </div>
-  </header>
+      <div class="contact-buttons">
+        <a href="tel:+919343409909" class="call-btn">📞 Call +91-9343409909</a>
+        <a href="mailto:taragonengineers@gmail.com" class="email-btn"
+          >✉️ Send Email</a
+        >
+      </div>
+    </header>
 
-  <main style="padding: 30px;">
-    <h2>Taragon Engineers</h2>
-    <h3>ISO 9001:2015 Certified Co.</h3>
-    <p>We specialize in Motor Starters and provide top-quality engineering solutions from Bangalore, Karnataka.</p>
-    <div style="margin-top: 40px;">
-      <img src="images/starter.jpeg" alt="Motor Starter" style="width: 80%; border-radius: 5px; border: 2px solid red;">
-    </div>
-    <div style="margin-top: 40px; margin-bottom: 20px;">
-      <img src="images/banner.png" alt="Farmer" style="width: 80%; border-radius: 5px; border: 2px solid red;">
-    </div>
-    
-
-  </main>
-  <footer>
-    <div class="footer-left">
-     
-    </div>
-    <div class="footer-center">
-      <p style="color: var(--white);"><strong>Manufacture By :</strong></p>
-      <h3 style="color: yellow;">TARAGON ENGINEERS</h3>
-      <p style="color: var(--white);">#14, 1st Cross, B.M.K Layout, Mysore Road<br/> Bangalore - 560026<br>
-      Customer care: +91-9343409909<br/> Email: taragonengineers@gmail.com</p>
-    
-    </div>
-
-    
-  </footer>
-
-</body>
+    <main style="padding: 30px">
+      <h2>Taragon Engineers</h2>
+      <h3>ISO 9001:2015 Certified Co.</h3>
+      <p>
+        We specialize in Motor Starters and provide top-quality engineering
+        solutions from Bangalore, Karnataka.
+      </p>
+      <div style="margin-top: 40px">
+        <img
+          src="images/starter.jpeg"
+          alt="Motor Starter"
+          style="width: 80%; border-radius: 5px; border: 2px solid red"
+        />
+      </div>
+      <div style="margin-top: 40px; margin-bottom: 20px">
+        <img
+          src="images/banner.png"
+          alt="Farmer"
+          style="width: 80%; border-radius: 5px; border: 2px solid red"
+        />
+      </div>
+    </main>
+    <footer>
+      <div class="footer-left"></div>
+      <div class="footer-center">
+        <p style="color: var(--white)"><strong>Manufacture By :</strong></p>
+        <h3 style="color: yellow">TARAGON ENGINEERS</h3>
+        <p style="color: var(--white)">
+          #14, 1st Cross, B.M.K Layout, Mysore Road<br />
+          Bangalore - 560026<br />
+          Customer care: +91-9343409909<br />
+          Email: taragonengineers@gmail.com
+        </p>
+        <div style="margin-top: 20px">
+          <img
+            style="max-width: 200px; border-radius: 5px"
+            src="images/Make-In-India.jpg"
+            alt="Logo"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
